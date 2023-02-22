@@ -34,6 +34,7 @@ body{
     border-radius: 10px 0 0 10px;
 }
 #product-info{
+    width: 50%;
     padding: 32px 30px;
 }
 #type{
