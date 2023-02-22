@@ -1,0 +1,116 @@
+:root{
+    /*### Primary*/
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+/*### Neutral*/
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#container{
+    max-width: 570px;
+    background-color: var(--White);
+    display: flex;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+#product-image{
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+}
+#product-info{
+    padding: 32px 30px;
+}
+#type{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    color: var(--Dark-grayish-blue);
+}
+h1{
+    font-family: 'Fraunces', sans-serif;
+    line-height: 30px;
+    letter-spacing: -1px;
+    margin: 21px 0 0;
+    font-size: 2em;
+    color: var(--Very-dark-blue);
+}
+#description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin: 22px 0 0;
+    line-height: 22px;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: -0.4px;
+
+}
+#price{
+    font-family: 'Fraunces', sans-serif;
+    margin: 25px 0 0;
+    font-size: 1.9em;
+    color: var(--Dark-cyan);
+    display: flex;
+    align-items: center;
+}
+#old-price{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin: -4px 0 0 18px;
+    color: var(--Dark-grayish-blue);
+}
+#cart{
+    border: none;
+    outline: none;
+    background-color: var(--Dark-cyan);
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--White);
+    margin: 22px 0 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}#cart img {margin: 0 10px 0 0;}
+#product-image-mobile{
+    display: none;
+}
+@media (max-width:600px) {
+    body{
+        height: auto;
+    }
+    #product-image-mobile{
+        display: block;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    #product-image{
+        display: none;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin: 30px 20px;
+    }
+}
+
